@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preview-video {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.create-food-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #08152e 0%,
+    #071125 50%,
+    #020b1d 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 15px;
+}
+
+.food-card {
+  width: 100%;
+  max-width: 420px;
+  background: #16233f;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.food-card h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #a7b2c5;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.food-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card label {
+  color: #b7c1d6;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.upload-box {
+  border: 2px dashed #3a5ca8;
+  background: #1b2c4d;
+  border-radius: 12px;
+  padding: 35px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #4f7fff;
+}
+
+.upload-box span {
+  font-size: 30px;
+}
+
+.upload-box p {
+  color: white;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.upload-box small {
+  color: #94a3b8;
+}
+
+.food-card input,
+.food-card textarea {
+  width: 100%;
+  background: #1b2c4d;
+  border: 1px solid #30486f;
+  border-radius: 10px;
+  padding: 14px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.food-card input::placeholder,
+.food-card textarea::placeholder {
+  color: #7e8ca5;
+}
+
+.food-card input:focus,
+.food-card textarea:focus {
+  border-color: #4f7fff;
+}
+
+.food-card textarea {
+  resize: none;
+}
+
+.food-card button {
+  margin-top: 20px;
+  background: #4f7fff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.food-card button:hover {
+  transform: translateY(-2px);
+}
