@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-	origin:"http://localhost:5173",
+	origin:"https://zomato-clone-1-uyv5.onrender.com",
 	credentials:true
 }));
 app.get("/",(req,res)=>{
