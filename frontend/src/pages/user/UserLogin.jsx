@@ -19,7 +19,7 @@ const UserLogin = () => {
 			withCredentials:true
 		})
 
-    navigate("/")
+    navigate("/home")
 	}
 
 	return (

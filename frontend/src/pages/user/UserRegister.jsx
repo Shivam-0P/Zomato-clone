@@ -21,7 +21,7 @@ const UserRegister = () => {
 			withCredentials:true
 		})
 		console.log(response.data);
-		navigate("/")
+		navigate("/user/login")
 	};
 	return (
 		<main className="auth-shell">
