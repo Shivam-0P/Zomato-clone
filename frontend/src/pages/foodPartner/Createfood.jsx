@@ -37,7 +37,7 @@ function Createfood() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/food",
+        "https://zomato-clone-s7ub.onrender.com/api/food",
         formData,
         {
           withCredentials: true,

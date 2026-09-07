@@ -8,7 +8,7 @@ function Home() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:3000/api/food', {
+            .get('https://zomato-clone-s7ub.onrender.com/api/food', {
                 withCredentials: true,
             })
             .then((response) => {

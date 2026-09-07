@@ -7,7 +7,7 @@ function Profile() {
 	const getdata = async () => {
   try {
     const foodRes = await axios.get(
-  "http://localhost:3000/api/food",
+  "https://zomato-clone-s7ub.onrender.com/api/food",
   { withCredentials: true }
 );
     setFoodItems(foodRes.data.fooditems);
