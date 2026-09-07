@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import UserRegister from '../pages/user/UserRegister'
 import UserLogin from '../pages/user/UserLogin'
 import FoodPartnerRegister from '../pages/foodPartner/FoodPartnerRegister'
@@ -7,12 +7,13 @@ import FoodPartnerLogin from '../pages/foodPartner/FoodPartnerLogin'
 import Profile from '../pages/foodPartner/Profile'
 import Home from '../General/Home'
 import Createfood from '../pages/foodPartner/Createfood'
+import Mainpage from '../pages/Mainpage/Mainpage.jsx'
 
 const AppRoutes = () => {
 	return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Navigate to="/user/register" replace />} />
+				<Route path="/" element={<Mainpage />} />
 				<Route path="/user/register" element={<UserRegister />} />
 				<Route path="/user/login" element={<UserLogin />} />
 				<Route path="/food-partner/register" element={<FoodPartnerRegister />} />
